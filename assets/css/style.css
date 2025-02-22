@@ -183,7 +183,7 @@ html {
 }
 
 body {
-  font-family: var(--ff-audiowide-regular), sans-serif;
+  font-family: var(--ff-roboto), sans-serif;
   background: var(--bg-primary);
   transition: var(--transition-1);
 }
@@ -347,7 +347,7 @@ body.active { overflow: hidden; }
 
 .logo a {
   color: var(--color-primary);
-  font-family: var(--ff-saira-stencil-one);
+  font-family: var(--ff-audiowide-regular);
 }
 
 .logo span {
@@ -788,6 +788,8 @@ body.light_theme .social-card .card-icon ion-icon {
   text-decoration: underline;
   margin-inline: auto;
 }
+
+
 
 
 
