@@ -3,7 +3,12 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * This file contains the styles for the entire website.
+ * It includes custom properties, theme colors, resets, and component styles.
+ */
+
+/**
+ * copyright 2025 feynolt.ai
  */
 
 
@@ -18,6 +23,7 @@
 
   /**
    * colors
+   * Define custom color variables for easy theme management.
    */
 
   --raw-seinna: hsl(24, 74%, 58%);
@@ -28,11 +34,12 @@
 
   /**
    * typography
+   * Define font families and sizes for consistent typography.
    */
 
-  --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
-  --ff-poppins: 'Poppins', sans-serif;
-  --ff-roboto: 'Roboto', sans-serif;
+   --ff-audiowide-regular: "Audiowide", serif; 
+   --ff-poppins: 'Poppins', sans-serif;
+   --ff-roboto: 'Roboto', sans-serif;
 
   --fs-1: 2rem;
   --fs-2: calc(1.813rem + 1vw);
@@ -47,18 +54,21 @@
 
   /**
    * transition
+   * Define transition timing for smooth animations.
    */
 
   --transition-1: 0.25s ease-in-out;
 
   /**
    * spacing
+   * Define padding for sections.
    */
 
   --section-padding: 80px;
 
   /**
    * radius
+   * Define border radius for rounded corners.
    */
 
   --radius-4: 4px;
@@ -73,6 +83,11 @@
 /*-----------------------------------*\
  * #THEME COLORS
 \*-----------------------------------*/
+
+/**
+ * Define theme colors for dark and light modes.
+ * These are applied to the body element based on the active theme.
+ */
 
 body.dark_theme {
 
@@ -107,6 +122,10 @@ body.light_theme {
 /*-----------------------------------*\
  * #RESET
 \*-----------------------------------*/
+
+/**
+ * Reset default browser styles for consistency across different browsers.
+ */
 
 *, *::before, *::after {
   margin: 0;
@@ -164,6 +183,7 @@ html {
 }
 
 body {
+  font-family: var(--ff-audiowide-regular), sans-serif;
   background: var(--bg-primary);
   transition: var(--transition-1);
 }
@@ -178,7 +198,15 @@ body.active { overflow: hidden; }
  * #REUSED STYLE
 \*-----------------------------------*/
 
+/**
+ * Common styles reused across different components.
+ */
+
 .container { padding-inline: 10px; }
+
+.h1, .h2, .h3, .h4 {
+  font-family: var(--ff-audiowide-regular), sans-serif;
+}
 
 .h1 {
   font-size: var(--fs-1);
@@ -283,6 +311,10 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
+
+/**
+ * Styles for the header, including logo, navigation, and theme toggle.
+ */
 
 .header {
   padding-block: 15px;
@@ -428,7 +460,7 @@ body.active { overflow: hidden; }
   width: max-content;
   margin-inline: auto;
   color: var(--color-primary);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-audiowide-regular), sans-serif;
   font-size: var(--fs-1);
   padding: 10px;
   transform: translateY(50px);
@@ -461,6 +493,10 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
+
+/**
+ * Styles for the hero section, including banner and content.
+ */
 
 main { overflow-x: hidden; }
 
@@ -498,6 +534,10 @@ main { overflow-x: hidden; }
 /*-----------------------------------*\
  * #SOCIAL
 \*-----------------------------------*/
+
+/**
+ * Styles for the social section, including social cards.
+ */
 
 .social {
   padding-block: var(--section-padding);
