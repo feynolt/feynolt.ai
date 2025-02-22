@@ -546,7 +546,7 @@ main { overflow-x: hidden; }
 .social-list {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250Px, 1fr)); /* Responsive grid */
 }
 
 .social-card {
@@ -554,7 +554,7 @@ main { overflow-x: hidden; }
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 25px;
+  padding: 10px;
   border-radius: var(--radius-12);
   box-shadow: var(--shadow-1);
   transition: var(--transition-1);
@@ -565,20 +565,20 @@ main { overflow-x: hidden; }
 }
 
 .social-card .card-icon {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 30px;
   display: grid;
   place-items: center;
   border-radius: 50%;
 }
 
 .social-card .card-icon ion-icon {
-  font-size: 60px; /* Adjust size as needed */
+  font-size: 25px; /* Adjust size as needed */
 }
 
 .social-card .card-title {
   width: calc(100% - 95px);
-  color: var(--raw-seinna);
+  color: var(--color-primary);
   text-align: center;
 }
 
@@ -591,6 +591,14 @@ main { overflow-x: hidden; }
 }
 
 .social-card > ion-icon { color: var(--color-secondary); }
+
+body.dark_theme .social-card .card-icon ion-icon {
+  color: var(--color-primary); /* White in dark mode */
+}
+
+body.light_theme .social-card .card-icon ion-icon {
+  color: var(--color-primary); /* Black in light mode */
+}
 
 
 
